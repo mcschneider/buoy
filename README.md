@@ -22,6 +22,8 @@ Buoy is a simple micro-library that makes working with vanilla JS a little bit e
 
 ### 2. Use Buoy in your scripts.
 
+#### hasClass
+
 `hasClass( element, class )` - Check if an element has a class.
 
 	var turkey = document.querySelector('#turkey');
@@ -29,20 +31,28 @@ Buoy is a simple micro-library that makes working with vanilla JS a little bit e
 	    // Do stuff...
 	}
 
+#### addClass
+
 `addClass( element, class )` - Add a class to an element.
 
 	var turkey = document.querySelector('#turkey');
 	buoy.addClass(turkey, 'sandwich');
+
+#### removeClass
 
 `removeClass( element, class )` - Remove a class from an element.
 
 	var turkey = document.querySelector('#turkey');
 	buoy.removeClass(turkey, 'sandwich');
 
+#### toggleClass
+
 `toggleClass( element, class )` - Add or remove a class from an element.
 
 	var turkey = document.querySelector('#turkey');
 	buoy.toggleClass(turkey, 'sandwich');
+
+#### getSiblings
 
 `getSiblings( element )` - Get an array of siblings for an element.
 
@@ -56,7 +66,7 @@ And that's it, you're done. Nice work! New to vanilla JS? Check out [Ditching jQ
 
 
 
-## Brower Compatability
+## Browser Compatability
 
 Buoy works in all modern browsers, and IE 6 and above.
 
