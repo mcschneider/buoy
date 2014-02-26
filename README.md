@@ -4,8 +4,6 @@ Buoy is a simple micro-library that makes working with vanilla JS a little bit e
 * Add, remove, toggle and check for classes.
 * Get an object's sibling elements.
 
-[View the Demo](http://cferdinandi.github.io/buoy/)
-
 1. [Getting Started](#getting-started)
 2. [Browser Compatability](#browser-compatability)
 3. [Options & Settings](#options-and-settings)
