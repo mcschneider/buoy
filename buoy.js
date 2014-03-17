@@ -91,13 +91,27 @@ window.buoy = (function (window, document, undefined) {
 		return siblings;
 	};
 
+	// Get the next matching ancestor
+	// Public method
+	// Returns single node or false
+	var getAncestor = function (elem, className) {
+		var parent = elem.parentNode;
+		if (parent === undefined || hasClass(parent, className)){
+			return parent;
+		} else {
+			return getAncestor(parent, className);
+		}
+
+	}
+
 	// Return public functions
 	return {
 		toggleClass: toggleClass,
 		removeClass: removeClass,
 		addClass: addClass,
 		hasClass: hasClass,
-		getSiblings: getSiblings
+		getSiblings: getSiblings,
+		getAncestor: getAncestor
 	};
 
 })(window, document);
